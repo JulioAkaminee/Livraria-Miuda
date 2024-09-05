@@ -8,3 +8,4 @@ abre o [http://localhost:3000](http://localhost:3000) para visualização
 
 Instala a pasta node modules para fazer o projeto funcionar
 
+### `Variaveis Globais`
