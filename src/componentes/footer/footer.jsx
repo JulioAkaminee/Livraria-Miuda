@@ -1,10 +1,10 @@
 
 import '../header/header.css';
 
-function Header() {
+function Footer() {
  return(
     <p>oi</p>
  )
 }
 
-export default Header;
+export default Footer;
