@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../header/header.css';
+import { Link } from "react-router-dom";
 
 function Header() {
   // Estado para controlar a visibilidade do menu
@@ -13,9 +14,10 @@ function Header() {
   return (
     <div>
       <header>
-        <a href="../header/header.jsx">
-          <img src="../assets/images/logo-miuda.png" alt="Logo" />
-        </a>
+        <Link to="/">
+          <img src="../assets/images/logo-miuda.png" alt="Logo"/>
+        </Link>
+      
         
         <div className="search-container">
           <input type="search" placeholder="Pesquisar..." />
