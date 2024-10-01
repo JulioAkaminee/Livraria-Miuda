@@ -1,1 +1,31 @@
 @import url('../../padronizacao//padronizacao.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+footer{
+    background-color: var(--laranja);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+footer>div>h1{
+    font-size: var(--font-size-grande);
+}
+
+footer>div>p{
+    font-size: var(--font-size-pequeno);
+}
+.container_socials>div{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container_socials>div>img{
+    width: 30px;
+}
