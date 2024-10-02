@@ -13,6 +13,7 @@ function App() {
      <Header/>
      <Categorias/>
      <h1>Favoritos</h1>
+     <Footer/>
    
      
      

@@ -1,0 +1,5 @@
+@import url(../../padronizacao/padronizacao.css);
+
+body{
+    background-color: var(--rosa);
+}
