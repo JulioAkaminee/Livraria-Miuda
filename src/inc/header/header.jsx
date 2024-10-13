@@ -15,7 +15,7 @@ function Header() {
     <div>
       <header>
         <Link to="/">
-          <img src="../assets/images/logo-miuda.png" alt="Logo"/>
+          <img className='logo' src="../assets/images/logo-miuda.png" alt="Logo"/>
         </Link>
       
         
@@ -25,9 +25,15 @@ function Header() {
         </div>
         
         <div className='icones-header'>
-          <span className="material-symbols-outlined">favorite</span>
-          <span className="material-symbols-outlined">shopping_cart</span>
-          <span className="material-symbols-outlined">person</span>
+        <Link to="/cardapio">
+          <span class="material-icons-outlined iconeHeader">
+            emoji_food_beverage
+            </span>
+        </Link>
+          <Link to="/carrinho"><span className="material-symbols-outlined iconeHeader">shopping_cart</span></Link>
+          <Link to="/login">
+          <span className="material-symbols-outlined iconeHeader">person</span>
+          </Link>
         </div>
         
         <span className="material-symbols-outlined" id='menu' onClick={toggleMenu}>

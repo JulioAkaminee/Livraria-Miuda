@@ -25,10 +25,15 @@ function Footer() {
          <p>Lorem ipsum dolor sit amet </p>
          <p>Lorem ipsum dolor sit amet </p>
       </div>
-      <div>
-         <h1>Cadastrar Email</h1>
-         <input type="email" name="email" placeholder='Digite Seu Email' />
-      </div>
+      <div className='cadastrarEmail'>
+  <h1>Cadastrar Email</h1>
+  <p>Cadastre seu e-mail para receber todas as novidades!</p>
+  <div className="input-container">
+    <input type="email" name="email" placeholder="Digite Seu Email" />
+    <span className="material-icons-outlined iconEmail">email</span>
+  </div>
+</div>
+
     </footer>
  )
 }

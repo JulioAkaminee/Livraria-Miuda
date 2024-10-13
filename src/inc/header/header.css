@@ -30,10 +30,18 @@ input{
   
     
 }
+.iconeHeader{
+  color: black;
+  font-size: 32px;
+  transition: 300ms;
+}
 .icones-header>span:hover{
     scale: 1.1;
 }
 
+.iconeHeader:hover{
+  scale: 1.1;
+}
 
 .search-container {
     display: flex; 
@@ -62,7 +70,7 @@ input{
   #menu{
     display: none;
   }
-  img{
+  .logo{
     height: 70px;
     border-radius: 65px;
   }

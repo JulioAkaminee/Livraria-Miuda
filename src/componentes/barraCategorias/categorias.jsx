@@ -7,12 +7,12 @@ function Categoria() {
 
   return (
     <div>
-    <ul>
-        <li>categoria</li>
-        <li>categoria</li>
-        <li>categoria</li>
-        <li>categoria</li>
-        <li>categoria</li>
+    <ul className="categoria">
+        <li>CATEGORIA</li>
+        <li>CATEGORIA</li>
+        <li>CATEGORIA</li>
+        <li>CATEGORIA</li>
+        <li>CATEGORIA</li>
     </ul>
         
     </div>
