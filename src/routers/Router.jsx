@@ -7,7 +7,7 @@ import EsqueciSenha from '../Pages/EsqueciSenha';
 import RedefinirSenha from '../Pages/RedefinirSenha'
 import Home from '../Pages/Home'
 import Cardapio from '../Pages/Cardapio';
-import Carrinho from '../Pages/carrinho';
+import Carrinho from '../Pages/Carrinho';
 import InformacoesLivro from '../Pages/InformacoesLivro';
 
 
