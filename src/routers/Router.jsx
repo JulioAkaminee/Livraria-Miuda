@@ -25,6 +25,7 @@ const Router = () => {
       <Route path="/esqueci-senha" element={<EsqueciSenha />} />
       <Route path="/cadastro" element={<Cadastro />} />
       <Route path="/redefinir-senha" element={<RedefinirSenha />} />
+     
     </Routes>
   );
 };

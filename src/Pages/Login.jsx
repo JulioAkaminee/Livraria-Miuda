@@ -4,7 +4,7 @@ import Footer from '../inc/footer/footer';
 import '../Pages/pagesCSS/login.css';
 import Oculto from '../assets/icons/oculto.svg';
 import Visivel from '../assets/icons/naoOculto.svg';
-
+import { Helmet } from 'react-helmet';
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -14,6 +14,10 @@ const Login = () => {
 
   return (
     <>
+    <Helmet>
+                <title>Login | Livraria Miuda</title>
+                <meta name="description" content="Pagina de login" />
+            </Helmet>
         <Header/>
       <div className="wrapper">
         <div className="login-container">

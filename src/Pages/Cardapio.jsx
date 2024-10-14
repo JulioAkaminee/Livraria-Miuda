@@ -5,12 +5,16 @@ import Footer from '../inc/footer/footer';
 import BarraCategoria from '../componentes/barraCategorias/categorias'
 
 import '../Pages/pagesCSS/cardapio.css'
-
+import { Helmet } from 'react-helmet';
 const Cardapio = () => {
 
 
     return (
         <>
+         <Helmet>
+                <title>Cardapio | Livraria Miuda</title>
+                <meta name="description" content="Pagina de cardapio" />
+            </Helmet>
             <Header />
             <BarraCategoria />
             <div className='containerTitlePrincipal'>

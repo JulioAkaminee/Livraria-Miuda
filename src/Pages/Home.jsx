@@ -7,11 +7,15 @@ import BarraCategoria from '../componentes/barraCategorias/categorias'
 import SliderComponent from '../componentes/sliderLivros/slider';
 import LivroModelo from '../componentes/livroModelo/livromodelo';
 import LivroModeloCompra from '../componentes/livroModeloCompra/livroModeloCompra'
-
+import { Helmet } from 'react-helmet';
 
 function Home() {
   return (
     <>
+    <Helmet>
+                <title>Home | Livraria Miuda</title>
+                <meta name="description" content="Pagina Home" />
+            </Helmet>
       <Header />
       <BarraCategoria />
       <h1 className='title_eventos'>Eventos</h1>

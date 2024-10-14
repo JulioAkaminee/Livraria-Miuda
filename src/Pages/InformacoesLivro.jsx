@@ -5,10 +5,14 @@ import LivroModelo from '../componentes/livroModelo/livromodelo';
 import '../Pages/pagesCSS/informacoesLivro.css';
 import LivroModeloCompra from '../componentes/livroModeloCompra/livroModeloCompra';
 import BarraCategoria from '../componentes/barraCategorias/categorias'
-
+import { Helmet } from 'react-helmet';
 const InformacoesLivro = () => {
   return (
     <>
+    <Helmet>
+                <title>Informações sobre o livro| Livraria Miuda</title>
+                <meta name="description" content="Pagina de informacoes sobre o livro" />
+            </Helmet>
       <Header />
       <BarraCategoria/>
       <main className="livro-info-container">
@@ -70,7 +74,7 @@ const InformacoesLivro = () => {
           
           </div>
           <div className="livro-recomendacoes-linha">
-            <LivroModeloCompra />
+            <LivroModeloCompra  />
             <LivroModeloCompra />
             <LivroModeloCompra />
             <LivroModeloCompra />

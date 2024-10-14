@@ -4,7 +4,7 @@ import Oculto from '../assets/icons/oculto.svg';
 import Visivel from '../assets/icons/naoOculto.svg';
 import Header from '../inc/header/header';
 import Footer from '../inc/footer/footer';
-
+import { Helmet } from 'react-helmet';
 const Cadastro = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -30,6 +30,10 @@ const Cadastro = () => {
 
   return (
     <>
+    <Helmet>
+                <title>Cadastro | Livraria Miuda</title>
+                <meta name="description" content="Pagina de cadastro" />
+            </Helmet>
       <Header />
       <div className="wrapper">
         <div className="login-container">

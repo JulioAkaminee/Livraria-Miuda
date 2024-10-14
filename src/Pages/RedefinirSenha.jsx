@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Pages/pagesCSS/login.css';
-
+import { Helmet } from 'react-helmet';
 const RecuperacaoSenha = () => {
   const [senha, setSenha] = useState('');
   const [confirmarSenha, setConfirmarSenha] = useState('');
@@ -18,6 +18,10 @@ const RecuperacaoSenha = () => {
 
   return (
     <>
+    <Helmet>
+                <title>Redefinir Senha | Livraria Miuda</title>
+                
+            </Helmet>
       <div className="wrapper">
         <div className="login-container">
           <h2 className="login-title">RECUPERAÇÃO DE SENHA</h2>

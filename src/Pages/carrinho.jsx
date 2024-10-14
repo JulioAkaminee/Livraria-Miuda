@@ -4,6 +4,7 @@ import './pagesCSS/carrinho.css';
 import Header from '../inc/header/header';
 import BarraCategoria from '../componentes/barraCategorias/categorias';
 import Footer from '../inc/footer/footer';
+import { Helmet } from 'react-helmet';
 
 const Carrinho = () => {
   const [livrosCarrinho, setLivrosCarrinho] = useState([
@@ -31,38 +32,65 @@ const Carrinho = () => {
       preco: 30.00,
       quantidade: 5,
     },
+    {
+      id: 4,
+      nome: 'Livro Exemplo 3',
+      capa: 'https://daniloyasigui.com/wp-content/uploads/2021/06/Capa_livro_infantil.png',
+      estoque: true,
+      preco: 30.00,
+      quantidade: 5,
+    },
+    {
+      id: 5,
+      nome: 'Livro Exemplo 3',
+      capa: 'https://daniloyasigui.com/wp-content/uploads/2021/06/Capa_livro_infantil.png',
+      estoque: true,
+      preco: 30.00,
+      quantidade: 5,
+    }
   ]);
 
-  // Remove um livro do carrinho
+  // Função para remover um livro do carrinho
   const removerLivro = (id) => {
-    setLivrosCarrinho((prevLivros) => prevLivros.filter((livro) => livro.id !== id));
+    const livrosAtualizados = livrosCarrinho.filter((livro) => livro.id !== id);
+    setLivrosCarrinho(livrosAtualizados);
   };
 
-  // Aumenta a quantidade de um item
+  // Função para aumentar a quantidade de um item
   const aumentarQuantidade = (id) => {
-    setLivrosCarrinho((prevLivros) =>
-      prevLivros.map((livro) => 
-        livro.id === id ? { ...livro, quantidade: livro.quantidade + 1 } : livro
-      )
-    );
+    const livrosAtualizados = livrosCarrinho.map((livro) => {
+      if (livro.id === id) {
+        return { ...livro, quantidade: livro.quantidade + 1 };
+      }
+      return livro;
+    });
+    setLivrosCarrinho(livrosAtualizados);
   };
 
-  // Diminui a quantidade de um item
+  // Função para diminuir a quantidade de um item
   const diminuirQuantidade = (id) => {
-    setLivrosCarrinho((prevLivros) =>
-      prevLivros.map((livro) => 
-        livro.id === id && livro.quantidade > 1 ? { ...livro, quantidade: livro.quantidade - 1 } : livro
-      )
-    );
+    const livrosAtualizados = livrosCarrinho.map((livro) => {
+      if (livro.id === id && livro.quantidade > 1) {
+        return { ...livro, quantidade: livro.quantidade - 1 };
+      }
+      return livro;
+    });
+    setLivrosCarrinho(livrosAtualizados);
   };
 
-  // Calcula o total do carrinho
+  // Função para calcular o subtotal total
   const calcularTotal = () => {
-    return livrosCarrinho.reduce((total, livro) => total + livro.preco * livro.quantidade, 0).toFixed(2);
+    return livrosCarrinho
+      .reduce((total, livro) => total + livro.preco * livro.quantidade, 0)
+      .toFixed(2); 
   };
 
   return (
     <>
+      <Helmet>
+                <title>Carinnho | Livraria Miuda</title>
+                <meta name="description" content="Pagina de carrinho " />
+            </Helmet>
       <Header />
       <BarraCategoria />
       <div className="carrinho-container">
@@ -72,11 +100,12 @@ const Carrinho = () => {
               <CarrinhoItem 
                 key={livro.id} 
                 livro={livro} 
-                onExcluir={() => removerLivro(livro.id)} 
-                aumentarQuantidade={() => aumentarQuantidade(livro.id)} 
-                diminuirQuantidade={() => diminuirQuantidade(livro.id)} 
+                onExcluir={() => removerLivro(livro.id)} // Passa a função para excluir
+                aumentarQuantidade={() => aumentarQuantidade(livro.id)} // Função para aumentar
+                diminuirQuantidade={() => diminuirQuantidade(livro.id)} // Função para diminuir
               />
             ))}
+            {/* Subtotal de todos os livros */}
             <div className="carrinho-total">
               <h3>Total: R$ {calcularTotal()}</h3>
               <button className="continuar-compra-btn">Continuar Compra</button>
@@ -86,7 +115,7 @@ const Carrinho = () => {
           <p>O carrinho está vazio.</p>
         )}
       </div>
-      <Footer />
+      <Footer/>
     </>
   );
 };

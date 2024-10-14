@@ -1,3 +1,4 @@
+
 .carrinho-item {
   display: grid;
   grid-template-columns: 80px 2fr 1fr 1fr 1fr 1fr;
@@ -56,6 +57,8 @@
 
 .carrinho-container {
   padding: 20px;
+  min-height: 60%;
+  
 }
 
 .carrinho-total {

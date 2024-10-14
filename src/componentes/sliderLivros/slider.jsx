@@ -46,33 +46,25 @@ const SliderComponent = () => {
         <div className="slider-container">
             <Slider ref={sliderRef} {...settings}>
                 <div className="slide">
-                    <LivroModeloCompra caminhoImagem='/assets/images/ostresporquinhos.svg' corLivro='purple'/>
+                    <LivroModeloCompra caminhoImagem='/assets/images/ostresporquinhos.svg' titulo='Os tres porquinhos' corLivro='purple'/>
                 </div>
                 {/* Adicione mais slides aqui */}
                 <div className="slide">
-                <LivroModeloCompra caminhoImagem='/assets/images/ostresporquinhos.svg' corLivro='purple'/>
+                <LivroModeloCompra caminhoImagem='https://m.media-amazon.com/images/I/71fWaI5myqL._AC_UF1000,1000_QL80_.jpg' titulo='Diario de um banana' corLivro='purple'/>
                 </div>
                 <div className="slide">
-                <LivroModeloCompra caminhoImagem='/assets/images/ostresporquinhos.svg' corLivro='purple'/>
+                <LivroModeloCompra caminhoImagem='https://m.media-amazon.com/images/I/61ATa0Pc4AL._AC_UF1000,1000_QL80_.jpg' corLivro='purple' titulo='O pequeno principe'/>
                 </div>
                 <div className="slide">
-                <LivroModeloCompra caminhoImagem='/assets/images/ostresporquinhos.svg' corLivro='purple'/>
+                <LivroModeloCompra caminhoImagem='https://http2.mlstatic.com/D_NQ_NP_758954-MLB44880417293_022021-O.webp' corLivro='purple' titulo='O pequeno principe'/>
                 </div>
                 <div className="slide">
-                <LivroModeloCompra caminhoImagem='/assets/images/ostresporquinhos.svg' corLivro='purple'/>
+                <LivroModeloCompra caminhoImagem='https://cirandacultural.fbitsstatic.net/img/p/livro-pop-up-turma-da-monica-lacos-de-amizade-74164/260692.jpg?w=520&h=520&v=no-change&qs=ignore' titulo='Turma da monica' corLivro='purple'/>
                   </div>
                 <div className="slide">
-                <LivroModeloCompra caminhoImagem='/assets/images/ostresporquinhos.svg' corLivro='purple'/>
+                <LivroModeloCompra caminhoImagem='https://m.media-amazon.com/images/I/71wWf-C-aUL._AC_UF1000,1000_QL80_.jpg' titulo='Rapunzel' corLivro='purple'/>
                 </div>
-                <div className="slide">
-                <LivroModeloCompra caminhoImagem='/assets/images/ostresporquinhos.svg' corLivro='purple'/>
-                </div>
-                <div className="slide">
-                <LivroModeloCompra caminhoImagem='/assets/images/ostresporquinhos.svg' corLivro='purple'/>
-                </div>
-                <div className="slide">
-                <LivroModeloCompra caminhoImagem='/assets/images/ostresporquinhos.svg' corLivro='purple'/>
-                </div>
+                
             </Slider>
 
         </div>
