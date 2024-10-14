@@ -13,7 +13,7 @@ const InformacoesLivro = () => {
       <BarraCategoria/>
       <main className="livro-info-container">
 
-        {/* Seção Principal de Informações do Livro */}
+        {/*  Informações do Livro */}
         <section className="livro-information">
           <div className="livro-imagem">
             <LivroModelo corLivro='green'/>
@@ -22,7 +22,7 @@ const InformacoesLivro = () => {
             <h1 className="livro-titulo">O Pequeno Príncipe</h1>
             <p className="livro-preco">R$ 00,00</p>
 
-            {/* Seção de Compra */}
+            {/*  Compra */}
             <div className="livro-compra">
               <input type="number" min="1" defaultValue="1" className="input-quantidade" />
               <button className="btn-comprar">Comprar</button>
@@ -37,7 +37,7 @@ const InformacoesLivro = () => {
           </div>
         </section>
 
-        {/* Seção separada da Sinopse e Ficha Técnica */}
+        {/*  Sinopse e Ficha Técnica */}
         <section className="livro-info-extra">
           <div className="livro-sinopse">
             <h2 className="secao-titulo">Sinopse</h2>
@@ -58,7 +58,7 @@ const InformacoesLivro = () => {
           </div>
         </section>
 
-        {/* Seção de Recomendações */}
+        {/*Recomendações */}
         <section className="livro-recomendacoes">
         
           <div className="livro-recomendacoes-linha">

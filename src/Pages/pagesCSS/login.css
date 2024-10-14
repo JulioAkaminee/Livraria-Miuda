@@ -12,11 +12,11 @@ body, html {
 }
 
 .wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
 }
 
 .login-container {
@@ -124,7 +124,6 @@ button:hover {
 @media (min-width: 768px) {
   .login-container {
     padding: 60px 30px;
-   
   }
 
   .login-title {
@@ -140,8 +139,8 @@ button:hover {
   }
 }
 
-@media(max-width: 475px){
-    .login-container{
-        width: 80%;
-    }
+@media(max-width: 475px) {
+  .login-container {
+    width: 80%;
+  }
 }

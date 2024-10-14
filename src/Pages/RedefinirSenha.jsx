@@ -7,7 +7,7 @@ const RecuperacaoSenha = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para redefinir a senha, como chamar uma API.
+    // Aqui você pode adicionar a lógica para redefinir a senha,
     if (senha === confirmarSenha) {
       // Lógica para redefinir a senha
       alert('Senha redefinida com sucesso!');

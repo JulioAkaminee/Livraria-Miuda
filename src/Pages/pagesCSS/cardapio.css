@@ -1,56 +1,60 @@
-
-.container_icon{
+.container_icon {
     display: flex;
     justify-content: center;
 }
-.container_icon>span{
+
+.container_icon > span {
     font-size: 78px;
 }
-.produtosCardapio{
+
+.produtosCardapio {
     display: flex;
     gap: 5%;
-
 }
-.produtoIndividual{
+
+.produtoIndividual {
     background-color: white;
     width: 30%;
     border-radius: 12px;
     margin: 15px;
     padding: 15px;
     transition: 400ms;
-    
 }
-.produtoIndividual:hover{
-    transform: scale(1.1) rotateX(15deg) rotateY(15deg); /* Aumenta e rotaciona para o efeito 3D */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao hover */
+
+.produtoIndividual:hover {
+    transform: scale(1.1) rotateX(15deg) rotateY(15deg); /* Efeito 3D ao hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
-.cardapio{
+.cardapio {
     margin: 35px;
     gap: 25px;
     display: flex;
     flex-direction: column;
 }
-.produtoIndividual>h1{
+
+.produtoIndividual > h1 {
     font-size: 16px;
 }
-.produtoIndividual>p{
+
+.produtoIndividual > p {
     font-size: 14px;
 }
 
-.container_title{
+.container_title {
     display: flex;
 }
-.container_title>h1{
+
+.container_title > h1 {
     margin-top: 5px;
     background-color: white;
     padding: 5px 100px;
     border-radius: 10px;
-    margin: 15px ;
-
+    margin: 15px;
 }
-.containerTitlePrincipal{
+
+.containerTitlePrincipal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +62,7 @@
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.containerTitlePrincipal>h1{
+
+.containerTitlePrincipal > h1 {
     text-align: center;
 }

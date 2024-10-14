@@ -27,9 +27,7 @@ body {
     display: flex;
     align-items: center;
     width: 65%;
-    
 }
-
 
 .container_image {
     margin: 0 10px;
@@ -52,7 +50,7 @@ body {
     text-align: center;
 }
 
-.container_livros > a{
+.container_livros > a {
     margin: 0 15px;
 }
 
@@ -61,31 +59,28 @@ body {
     width: 150px;
     border-radius: 10px;
     height: 100%;
-  
-  object-fit: cover;
+    object-fit: cover;
 }
-.container_image{
-    height: 100%;
-}
+
 .title_eventos {
     text-align: center;
     background-color: var(--rosa);
     color: white;
-    padding-top:10px ;
+    padding-top: 10px;
 }
-
-
 
 .populares > h1,
 .livros > h1 {
     text-align: center;
     background-color: var(--amarelo);
     padding: 10px 0;
-    margin: 0; /* Remove margem padrão */
+    margin: 0;
 }
-.populares>div{
+
+.populares > div {
     padding: 30px 0;
 }
+
 .container_livros {
     display: flex;
     justify-content: center;
@@ -97,75 +92,77 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 20px 0; /* Adiciona margem superior e inferior */
+    margin: 20px 0;
 }
 
 .ordem_number {
-    all: unset; /* Remove todos os estilos herdados e aplicados */
-    display: inline-block; /* Definir para inline-block para manter o layout correto */
-    cursor: pointer; /* Garantir que o cursor de pointer seja exibido */
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
     background-color: white;
     padding: 15px;
     margin: 15px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza a transição */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .ordem_number:hover {
     background-color: rgb(217, 217, 217);
-    transform: translateY(-2px); /* Efeito de levantar o botão ao passar o mouse */
+    transform: translateY(-2px);
 }
 
 .ordem_number:focus {
-    outline: none; /* Remove o contorno ao focar */
+    outline: none;
 }
-@media screen and (max-width: 1380px){
-    .livros>div>a{
-       margin: 15px;
+
+@media screen and (max-width: 1380px) {
+    .livros > div > a {
+        margin: 15px;
     }
 }
 
 @media screen and (max-width: 975px) {
     .sectionEvent2 {
-        display: none; /* Oculta a segunda seção de eventos em telas menores */
+        display: none;
     }
     .container_information > p {
         font-size: 70%;
         text-align: center;
     }
-    .sectionEvent1{
+    .sectionEvent1 {
         width: 80%;
     }
 }
-@media screen and (max-width: 768px){
-    .sectionEvent1{
+
+@media screen and (max-width: 768px) {
+    .sectionEvent1 {
         width: 90%;
     }
     .container_information > p {
         font-size: 60%;
         text-align: center;
     }
-    .container_image img{
+    .container_image img {
         width: 100%;
     }
-    .container_image{
+    .container_image {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 710px) {
     .sectionEvent1 {
-        flex-direction: column; /* Muda para coluna em telas menores */
-        align-items: center; /* Centraliza os itens */
+        flex-direction: column;
+        align-items: center;
     }
-    .container_information{
+    .container_information {
         display: none;
     }
 }
 
 @media screen and (max-width: 440px) {
     .container_information {
-        width: 260px; /* Reduz a largura em telas muito pequenas */
+        width: 260px;
     }
 }

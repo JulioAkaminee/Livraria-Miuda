@@ -30,42 +30,35 @@ const Carrinho = () => {
       estoque: true,
       preco: 30.00,
       quantidade: 5,
-    }
+    },
   ]);
 
-  // Função para remover um livro do carrinho
+  // Remove um livro do carrinho
   const removerLivro = (id) => {
-    const livrosAtualizados = livrosCarrinho.filter((livro) => livro.id !== id);
-    setLivrosCarrinho(livrosAtualizados);
+    setLivrosCarrinho((prevLivros) => prevLivros.filter((livro) => livro.id !== id));
   };
 
-  // Função para aumentar a quantidade de um item
+  // Aumenta a quantidade de um item
   const aumentarQuantidade = (id) => {
-    const livrosAtualizados = livrosCarrinho.map((livro) => {
-      if (livro.id === id) {
-        return { ...livro, quantidade: livro.quantidade + 1 };
-      }
-      return livro;
-    });
-    setLivrosCarrinho(livrosAtualizados);
+    setLivrosCarrinho((prevLivros) =>
+      prevLivros.map((livro) => 
+        livro.id === id ? { ...livro, quantidade: livro.quantidade + 1 } : livro
+      )
+    );
   };
 
-  // Função para diminuir a quantidade de um item
+  // Diminui a quantidade de um item
   const diminuirQuantidade = (id) => {
-    const livrosAtualizados = livrosCarrinho.map((livro) => {
-      if (livro.id === id && livro.quantidade > 1) {
-        return { ...livro, quantidade: livro.quantidade - 1 };
-      }
-      return livro;
-    });
-    setLivrosCarrinho(livrosAtualizados);
+    setLivrosCarrinho((prevLivros) =>
+      prevLivros.map((livro) => 
+        livro.id === id && livro.quantidade > 1 ? { ...livro, quantidade: livro.quantidade - 1 } : livro
+      )
+    );
   };
 
-  // Função para calcular o subtotal total
+  // Calcula o total do carrinho
   const calcularTotal = () => {
-    return livrosCarrinho
-      .reduce((total, livro) => total + livro.preco * livro.quantidade, 0)
-      .toFixed(2); // Para formatar com 2 casas decimais
+    return livrosCarrinho.reduce((total, livro) => total + livro.preco * livro.quantidade, 0).toFixed(2);
   };
 
   return (
@@ -79,12 +72,11 @@ const Carrinho = () => {
               <CarrinhoItem 
                 key={livro.id} 
                 livro={livro} 
-                onExcluir={() => removerLivro(livro.id)} // Passa a função para excluir
-                aumentarQuantidade={() => aumentarQuantidade(livro.id)} // Função para aumentar
-                diminuirQuantidade={() => diminuirQuantidade(livro.id)} // Função para diminuir
+                onExcluir={() => removerLivro(livro.id)} 
+                aumentarQuantidade={() => aumentarQuantidade(livro.id)} 
+                diminuirQuantidade={() => diminuirQuantidade(livro.id)} 
               />
             ))}
-            {/* Subtotal de todos os livros */}
             <div className="carrinho-total">
               <h3>Total: R$ {calcularTotal()}</h3>
               <button className="continuar-compra-btn">Continuar Compra</button>
@@ -94,7 +86,7 @@ const Carrinho = () => {
           <p>O carrinho está vazio.</p>
         )}
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -4,7 +4,6 @@ import Header from '../inc/header/header';
 import Footer from '../inc/footer/footer'
 import '../Pages/pagesCSS/home.css'
 import BarraCategoria from '../componentes/barraCategorias/categorias'
-// import { Link } from "react-router-dom";
 import SliderComponent from '../componentes/sliderLivros/slider';
 import LivroModelo from '../componentes/livroModelo/livromodelo';
 import LivroModeloCompra from '../componentes/livroModeloCompra/livroModeloCompra'
