@@ -7,6 +7,7 @@ import Footer from '../inc/footer/footer';
 import { Helmet } from 'react-helmet';
 
 const Carrinho = () => {
+  //fazer somente backend
   const [livrosCarrinho, setLivrosCarrinho] = useState([
     {
       id: 1,
