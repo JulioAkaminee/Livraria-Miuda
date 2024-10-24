@@ -8,12 +8,12 @@ const FormaDePagamento = () => {
         <>
         <Header/>
         <main>
-            <div className="pai">
-                <div className="container23">
-                    <div className="pay">
+            <div className="paipagamento">
+                <div className="container23pagamento">
+                    <div className="paypagamento">
                         <strong>Forma de Pagamento</strong>
                     </div>
-                    <div className="dados">
+                    <div className="dadospagamento">
                         <br /><br />
                         <div className="credito">
                             <img src="/assets/images/credit-card.png" className="creditar" width="30px" alt="" />
@@ -36,57 +36,57 @@ const FormaDePagamento = () => {
                         <br /><br />
                     </div>
                 </div>
-                <div className="container3">
-                    <div className="banana1">
-                        <div className="livro1">
+                <div className="container23pagamento">
+                    <div className="banana1pagamento">
+                        <div className="livro1pagamento">
                             <div className="frente1">
                                 <a href="" target="_blank" rel="noopener noreferrer">
-                                    <img src="/assets/images/diariodeumbananaazulum.jpg" alt="nada" className="img1" />
+                                    <img src="/assets/images/diariodeumbananaazulum.jpg" alt="nada" className="img1pagamento" />
                                 </a>
                             </div>
-                            <div className="inferior1"></div>
-                            <div className="folhas1"></div>
-                            <div className="marcador1"></div>
+                            <div className="inferior1pagamento"></div>
+                            <div className="folhas1pagamento"></div>
+                            <div className="marcador1pagamento"></div>
                         </div>
-                        <div className="diario1">
+                        <div className="diario1pagamento">
                             <strong>Diário de um banana: <br /> Rodrick é o Cara</strong><br /><br />
                             <strong>R$00,00</strong>
                         </div>
                     </div>
-                    <div className="line1"></div>
-                    <div className="banana1">
-                        <div className="livro1">
-                            <div className="frente1">
+                    <div className="line1pagamento"></div>
+                    <div className="banana1pagamento">
+                        <div className="livro1pagamento">
+                            <div className="frente1pagamento">
                                 <a href="" target="_blank" rel="noopener noreferrer">
-                                    <img src="/assets/images/diariodeumbananaazulum.jpg" alt="nada" className="img1" />
+                                    <img src="/assets/images/diariodeumbananaazulum.jpg" alt="nada" className="img1pagamento" />
                                 </a>
                             </div>
-                            <div className="inferior1"></div>
-                            <div className="folhas1"></div>
-                            <div className="marcador1"></div>
+                            <div className="inferior1pagamento"></div>
+                            <div className="folhas1pagamento"></div>
+                            <div className="marcador1pagamento"></div>
                         </div>
-                        <div className="diario1">
+                        <div className="diario1pagamento">
                             <strong>Diário de um banana: <br /> Rodrick é o Cara<br /><br /> R$00,00</strong>
                         </div>
                     </div>
-                    <div className="line2"></div>
-                    <div className="banana1">
-                        <div className="livro1">
-                            <div className="frente1">
+                    <div className="line2pagamento"></div>
+                    <div className="banana1pagamento">
+                        <div className="livro1pagamento">
+                            <div className="frente1pagamento">
                                 <a href="" target="_blank" rel="noopener noreferrer">
-                                    <img src="/assets/images/diariodeumbananaazulum.jpg" alt="nada" className="img1" />
+                                    <img src="/assets/images/diariodeumbananaazulum.jpg" alt="nada" className="img1pagamento" />
                                 </a>
                             </div>
-                            <div className="inferior1"></div>
-                            <div className="folhas1"></div>
-                            <div className="marcador1"></div>
+                            <div className="inferior1pagamento"></div>
+                            <div className="folhas1pagamento"></div>
+                            <div className="marcador1pagamento"></div>
                         </div>
-                        <div className="diario1">
+                        <div className="diario1pagamento">
                             <strong>Diário de um banana: <br /> Rodrick é o Cara<br /><br /> R$00,00</strong>
                         </div>
                     </div>
-                    <div className="line3"></div>
-                    <div className="custo">
+                    <div className="line3pagamento"></div>
+                    <div className="custopagamento">
                         <strong>
                             Custo Frete R$00,00<br /><br />
                             Total: R$00,00
@@ -95,6 +95,10 @@ const FormaDePagamento = () => {
                 </div>
             </div>
         </main>
+        <br />
+        <br />
+        <br />
+        <br />
         <br />
         <br />
         <Footer/>

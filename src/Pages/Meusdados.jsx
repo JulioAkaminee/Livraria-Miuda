@@ -8,7 +8,7 @@ const MeusDados = () => {
      <>
      <Header/>
       <main>
-        <div className="meusdados">MEUS DADOS</div>
+        <div className="meusdadosdados">MEUS DADOS</div>
   
         <div className="actt acesso">
           <h2>DADOS DE ACESSO</h2>
@@ -40,7 +40,7 @@ const MeusDados = () => {
           <button className='dadosb'>EDITAR</button>
         </div>
   
-        <div className="actt endereco">
+        <div className="actt enderecodados">
           <h2>ENDEREÇO</h2>
           <div className="form-group">
             <div className="input-group">

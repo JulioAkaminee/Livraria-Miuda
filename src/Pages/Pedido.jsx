@@ -8,12 +8,12 @@ const PedidoForm = () => {
         <>
         <Header/>
         <main>
-            <div className="container1">
+            <div className="container1pedido">
                 <div className="dadosdopedido">Dados do Pedido</div>
             </div>
-            <div className="pai">
-                <div className="container2">
-                    <form className="dados">
+            <div className="paipedido">
+                <div className="container2pedido">
+                    <form className="dadospedido">
                         <input className="nomecompleto" type="text" placeholder="   Nome Completo: " />
                         <br /><br />
                         <input className="celular" type="text" placeholder="   Celular: " />
@@ -33,57 +33,57 @@ const PedidoForm = () => {
                         <br /><br />
                     </form>
                 </div>
-                <div className="container3">
-                    <div className="banana1">
-                        <div className="livro1">
-                            <div className="frente1">
+                <div className="container3pedido">
+                    <div className="banana1pedido">
+                        <div className="livro1pedido">
+                            <div className="frente1pedido">
                                 <a href="" target="_blank" rel="noopener noreferrer">
-                                    <img src="/assets/images/diariodeumbananaazulum.jpg" alt="nada" className="img1" />
+                                    <img src="/assets/images/diariodeumbananaazulum.jpg" alt="nada" className="img1pedido" />
                                 </a>
                             </div>
-                            <div className="inferior1"></div>
-                            <div className="folhas1"></div>
-                            <div className="marcador1"></div>
+                            <div className="inferior1pedido"></div>
+                            <div className="folhas1pedido"></div>
+                            <div className="marcador1pedido"></div>
                         </div>
-                        <div className="diario1">
+                        <div className="diario1pedido">
                             <strong>Diário de um banana: <br /> Rodrick é o Cara</strong><br /><br />
                             <strong>R$00,00</strong>
                         </div>
                     </div>
-                    <div className="line1"></div>
-                    <div className="banana1">
-                        <div className="livro1">
-                            <div className="frente1">
+                    <div className="line1pedido"></div>
+                    <div className="banana1pedido">
+                        <div className="livro1pedido">
+                            <div className="frente1pedido">
                                 <a href="" target="_blank" rel="noopener noreferrer">
-                                    <img src="/assets/images/diariodeumbananaazulum.jpg" alt="nada" className="img1" />
+                                    <img src="/assets/images/diariodeumbananaazulum.jpg" alt="nada" className="img1pedido" />
                                 </a>
                             </div>
-                            <div className="inferior1"></div>
-                            <div className="folhas1"></div>
-                            <div className="marcador1"></div>
+                            <div className="inferior1pedido"></div>
+                            <div className="folhas1pedido"></div>
+                            <div className="marcador1pedido"></div>
                         </div>
-                        <div className="diario1">
+                        <div className="diario1pedido">
                             <strong>Diário de um banana: <br /> Rodrick é o Cara <br /><br /> R$00,00</strong>
                         </div>
                     </div>
-                    <div className="line2"></div>
-                    <div className="banana1">
-                        <div className="livro1">
-                            <div className="frente1">
+                    <div className="line2pedido"></div>
+                    <div className="banana1pedido">
+                        <div className="livro1pedido">
+                            <div className="frente1pedido">
                                 <a href="" target="_blank" rel="noopener noreferrer">
-                                    <img src="/assets/images/diariodeumbananaazulum.jpg" alt="nada" className="img1" />
+                                    <img src="/assets/images/diariodeumbananaazulum.jpg" alt="nada" className="img1pedido" />
                                 </a>
                             </div>
-                            <div className="inferior1"></div>
-                            <div className="folhas1"></div>
-                            <div className="marcador1"></div>
+                            <div className="inferior1pedido"></div>
+                            <div className="folhas1pedido"></div>
+                            <div className="marcador1pedido"></div>
                         </div>
-                        <div className="diario1">
+                        <div className="diario1pedido">
                             <strong>Diário de um banana: <br /> Rodrick é o Cara <br /><br /> R$00,00</strong>
                         </div>
                     </div>
-                    <div className="line3"></div>
-                    <div className="custo">
+                    <div className="line3pedido"></div>
+                    <div className="custopedido">
                         <strong>
                             Custo Frete R$00,00<br /><br />
                             Total: R$00,00
